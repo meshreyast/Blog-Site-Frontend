@@ -1,6 +1,6 @@
 {
   "name": "blog-site",
-  "homepage": "https://trojanonloose.github.io/Blog-Site",
+  "homepage": "https://trojanonloose.github.io/Blog-Site-Frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
