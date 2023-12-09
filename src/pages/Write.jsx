@@ -46,7 +46,7 @@ const Write = () => {
     return (
         <div className='write'>
             {file && (
-                <img className='writeImg' src={URL.createObjectURL(file)} alt='' />
+                <img className='writeImg' src={URL.createObjectURL(file)} alt='postimage' />
             )}
             <form className='writeForm' onSubmit={handleSubmit}>
                 <div className='writeFormGroup'>
