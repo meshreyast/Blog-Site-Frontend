@@ -2,11 +2,12 @@ import axios from 'axios';
 import React, { useContext, useState } from 'react'
 import Sidebar from '../components/Sidebar'
 import { Context } from '../context/Context'
+import { URL } from '../constants';
 
 const Settings = () => {
 
     const { user, dispatch } = useContext(Context);
-    const PF = 'http://localhost:5000/images/';
+    const PF = `${URL}images/`;
 
     const [file, setFile] = useState("");
     const [username, setUsername] = useState("");
@@ -98,7 +99,7 @@ const Settings = () => {
                 </form>
             </div>
             <Sidebar />
-        </div >
+        </div>
     )
 }
 

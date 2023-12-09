@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { URL } from "../constants";
 
 const PostCard = ({ post }) => {
 
     const [readMore, setReadMore] = useState(false);
-    const PF = 'http://localhost:5000/images/';
+    const PF = `${URL}images/`;
 
     return (
         <div className="post">

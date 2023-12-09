@@ -1,11 +1,12 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { Context } from '../context/Context';
+import { URL } from '../constants';
 
 const Navbar = () => {
 
     const { user, dispatch } = useContext(Context);
-    const PF = 'http://localhost:5000/images/';
+    const PF = `${URL}images/`;
 
 
     const handleLogout = (e) => {
