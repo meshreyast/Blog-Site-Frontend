@@ -6,7 +6,6 @@ const Sidebar = () => {
 
     const [cats, setCats] = useState([]);
     const catsTrial = new Set(cats);
-    console.log(Array.from(catsTrial))
 
 
     useEffect(() => {
@@ -30,7 +29,7 @@ const Sidebar = () => {
             <div className='sidebarItem'>
                 <span className='sidebarTitle'>Categories</span>
                 <ul className='sidebarList'>
-                    {cats.map(c => (
+                    {catsTrial.map(c => (
                         <Link className='link' to={`/?cat=${c.name}`}>
                             <li className='sidebarListItem'>{c.name}</li>
                         </Link>
