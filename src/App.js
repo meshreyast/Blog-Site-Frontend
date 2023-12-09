@@ -20,7 +20,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route exact path='/' element={<Home />} />
+        <Route exact path='/Blog-Site-Frontend' element={<Home />} />
         <Route path='/register' element={user ? <Home /> : <Register />} />
         <Route path='/login' element={user ? <Home /> : <Login />} />
         <Route path='/write' element={user ? <Write /> : <Login />} />
